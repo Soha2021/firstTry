@@ -1,0 +1,30 @@
+start game
+
+    choose a word
+    reset the graphic
+    *reset all the letter buttons
+    add black spaces for each letter of the word
+    add message to choose a letter
+
+
+choose a letter = send letter
+
+    reveal any matches for that letter
+    disable the button for that letter
+    check to see if all the letters are revealed
+        if yes then end the game win
+        if no reveal next body part
+            if 6th body part revealed end game lose
+
+
+end the game = win/lose
+
+    if win 
+        reset the graphic
+        add message that you won
+        disable all letter buttons
+    else
+        disable all letter buttons
+        reveal letters in word
+        add message that you lost
+        reveal dead person

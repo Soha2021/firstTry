@@ -1,0 +1,85 @@
+body {
+    font: 14pt black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newword {
+
+    background-color: whitesmoke;
+    border: 1pt solid black;
+    padding: 0px 3px;
+
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+#hangingman {
+
+    float: left;
+
+}
+
+.hanging {
+
+    display: none;
+
+}
+
+.hanging:nth-child(1) {
+
+    display: inline;
+
+}
+
+#word, #message {
+
+    font-size: 24pt;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#message {
+
+    padding-top: 150px;
+
+}
+
+#word {
+
+    letter-spacing: .5em;
+}
+
+#controls {
+
+    clear: both;
+
+}
+
+.buttongroup {
+
+    padding: 5px;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+
+}
+
+.finalbutton {
+    justify-content: center;
+}
+
+button {
+
+    font-size: 18pt;
+    font-weight: bold;
+    width: 2em;
+
+}
+
+.finalbutton button {
+    width: auto;
+}

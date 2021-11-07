@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <link rel="stylesheet" href="hangman.css">
+    <script src="hangman.js"></script>
+    <title>Hangman Game JavaScript Demo</title>
+</head>
+<body>
+    <div id="instructions">
+        <h1>Hangman the Game</h1>
+        <p>
+            The hangman game is a classic, albeit morbid, pen and paper game where you 
+            attempt to guess a random word before running out of guesses. Each incorrect
+            guess results in another body part added to the hanging person image. If you  
+            guess the word before the image is completed you win. But if the image is  
+            completed before you guess the word, you lose. 
+        </p>
+        <p>
+            In this version of hangman you must complete the word before you complete
+            six parts of the hanging person. You can choose letters and they will fill
+            in for the word. When the word is completed you will be declared a winner.
+            You can also reset the game at any time with the <span class="newword">New Word</span> button. Click on 
+            the <span class="newword">New Word</span> button to begin the game. 
+        </p>
+        <p>
+            Have fun!
+        </p>
+    </div>
+    <div id="hangingman">
+        <img src="hangman1.png" alt="just gallows" class="hanging" >
+        <img src="hangman2.png" alt="head" class="hanging">
+        <img src="hangman3.png" alt="body" class="hanging">
+        <img src="hangman4.png" alt="right arm" class="hanging">
+        <img src="hangman5.png" alt="left arm" class="hanging">
+        <img src="hangman6.png" alt="left leg" class="hanging">
+        <img src="hangman7.png" alt="hangman complete" class="hanging">
+        <img src="hangman8.png" alt="dead person hanging" class="hanging">
+    </div>
+
+    <div id="message">READY?</div>
+    
+    <div id="word"></div>
+
+    <div id="controls">
+        <div class="buttongroup">
+            <button onclick="pressButton('A');">A</button>
+            <button onclick="pressButton('B');">B</button>
+            <button onclick="pressButton('C');">C</button>
+            <button onclick="pressButton('D');">D</button>
+            <button onclick="pressButton('E');">E</button>
+            <button onclick="pressButton('F');">F</button>
+            <button onclick="pressButton('G');">G</button>
+            <button onclick="pressButton('H');">H</button>
+            <button onclick="pressButton('I');">I</button>
+            <button onclick="pressButton('J');">J</button>
+            <button onclick="pressButton('K');">K</button>
+            <button onclick="pressButton('L');">L</button>
+            <button onclick="pressButton('M');">M</button>
+        </div>
+        <div class="buttongroup">
+            <button onclick="pressButton('N');">N</button>
+            <button onclick="pressButton('O');">O</button>
+            <button onclick="pressButton('P');">P</button>
+            <button onclick="pressButton('Q');">Q</button>
+            <button onclick="pressButton('R');">R</button>
+            <button onclick="pressButton('S');">S</button>
+            <button onclick="pressButton('T');">T</button>
+            <button onclick="pressButton('U');">U</button>
+            <button onclick="pressButton('V');">V</button>
+            <button onclick="pressButton('W');">W</button>
+            <button onclick="pressButton('X');">X</button>
+            <button onclick="pressButton('Y');">Y</button>
+            <button onclick="pressButton('Z');">Z</button>
+        </div>
+        <div class="buttongroup finalbutton">
+            <button onclick="startGame();">New Word</button>
+        </div>
+    </div>
+
+</body>
+</html>
